@@ -13,34 +13,100 @@ body {
 
 .card {
   background: hsl(216deg, 50%, 16%);
-  width: 18rem;
+  width: 17.4rem;
   height: 31rem;
   border-radius: 1rem;
   padding: 1.5em;
-}
-
-.nft-img {
-  max-width: 100%;
-  border-radius: 0.5rem;
 }
 
 h1 {
   color: hsl(0deg, 0%, 100%);
   font-size: 1.375rem;
 }
+h1:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
 
 p {
   color: hsl(215deg, 51%, 70%);
   font-weight: 300;
   font-size: 18px;
+  line-height: 1.6rem;
 }
 
 .nft-detail {
   display: flex;
   justify-content: space-between;
+  border-bottom: 0.1rem solid hsl(215deg, 32%, 27%);
+  padding-bottom: 1em;
 }
 
 .detail-align {
   display: flex;
   align-items: center;
+}
+
+span {
+  margin-left: 0.3rem;
+  font-size: 15px;
+}
+
+.eth-font {
+  color: hsl(178deg, 100%, 50%);
+}
+
+.day-font {
+  color: hsl(215deg, 51%, 70%);
+}
+
+.user-detail {
+  display: flex;
+  align-items: center;
+  padding-top: 1em;
+}
+
+.avatar-img {
+  height: 2rem;
+  border: 0.07rem solid hsl(0deg, 0%, 100%);
+  border-radius: 100%;
+}
+
+.creator {
+  color: hsl(0deg, 0%, 100%);
+  padding-left: 0.3em;
+}
+.creator:hover {
+  color: hsl(178deg, 100%, 50%);
+  cursor: pointer;
+}
+
+.creation-of {
+  color: hsl(215deg, 51%, 70%);
+  font-size: 15px;
+  font-weight: 300;
+  padding-left: 1rem;
+  display: flex;
+}
+
+.attribution {
+  margin: 1em;
+  font-size: 0.5rem;
+  color: hsl(215deg, 32%, 27%);
+  display: flex;
+}
+
+.img-container {
+  position: relative;
+}
+
+.nft-img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+}
+
+.middle {
+  position: absolute;
+  background-color: hsl(178deg, 100%, 50%);
 }/*# sourceMappingURL=style.css.map */

@@ -28,31 +28,34 @@ body {
 
 .card {
     background: $dark-blue-card-bg;
-    width: 18rem;
+    width: 17.4rem;
     height: 31rem;
     border-radius: 1rem;
     padding: 1.5em;
 }
 
-.nft-img {
-    max-width: 100%;
-    border-radius: 0.5rem;
-}
-
 h1 {
     color: $white;
     font-size: 1.375rem;
+    &:hover {
+        color: $cyan;
+        cursor: pointer;
+    }
 }
+
 
 p {
     color: $soft-blue;
     font-weight: 300;
     font-size: $p-font-size;
+    line-height: 1.6rem;
 }
 
 .nft-detail {
     display: flex;
     justify-content: space-between;
+    border-bottom: 0.1rem solid $dark-blue-line;
+    padding-bottom: 1em;
 }
 
 .detail-align {
@@ -60,6 +63,67 @@ p {
     align-items: center;
 }
 
+span {
+    margin-left: 0.3rem;
+    font-size: 15px;
+}
+
+.eth-font {
+    color: $cyan;
+}
+
+.day-font {
+    color: $soft-blue
+}
+
+.user-detail {
+    display: flex;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.avatar-img {
+    height: 2rem;
+    border: 0.07rem solid $white;
+    border-radius: 100%;;
+}
+
+.creator {
+    color: $white;
+    padding-left: 0.3em;
+    &:hover {
+        color: $cyan;
+        cursor: pointer;
+    }
+}
+
+.creation-of {
+        color: $soft-blue; 
+        font-size: 15px;
+        font-weight: 300;
+        padding-left: 1rem;
+        display: flex;
+}
+
+.attribution {
+    margin: 1em;
+    font-size: 0.5rem;
+    color: $dark-blue-line;
+    display: flex;
+}
 
 
+.img-container {
+    position: relative;
+}
 
+.nft-img {
+    max-width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+}
+
+.middle {
+    position: absolute;
+    background-color: $cyan;
+}
