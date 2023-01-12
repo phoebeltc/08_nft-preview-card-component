@@ -18,6 +18,12 @@ body {
   border-radius: 1rem;
   padding: 1.5em;
 }
+@media screen and (min-width: 768px) {
+  .card {
+    width: 18.8rem;
+    height: 34rem;
+  }
+}
 
 h1 {
   color: hsl(0deg, 0%, 100%);
@@ -27,6 +33,11 @@ h1:hover {
   color: hsl(178deg, 100%, 50%);
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  h1 {
+    margin: 1.3rem 0 1.2rem 0;
+  }
+}
 
 p {
   color: hsl(215deg, 51%, 70%);
@@ -34,12 +45,22 @@ p {
   font-size: 18px;
   line-height: 1.6rem;
 }
+@media screen and (min-width: 768px) {
+  p {
+    margin-bottom: 1.6rem;
+  }
+}
 
 .nft-detail {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.1rem solid hsl(215deg, 32%, 27%);
   padding-bottom: 1em;
+}
+@media screen and (min-width: 768px) {
+  .nft-detail {
+    padding-bottom: 1.4em;
+  }
 }
 
 .detail-align {
@@ -98,15 +119,38 @@ span {
 
 .img-container {
   position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+.img-container:after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-color: hsl(178deg, 100%, 50%);
+  top: -25%;
+  left: -25%;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+.img-container:hover:after {
+  opacity: 0.5;
+}
+.img-container:hover .view {
+  opacity: 1;
 }
 
 .nft-img {
   max-width: 100%;
-  border-radius: 0.5rem;
   display: block;
 }
 
-.middle {
+.view {
   position: absolute;
-  background-color: hsl(178deg, 100%, 50%);
+  z-index: 5;
+  top: 41%;
+  left: 41%;
+  opacity: 0;
+  transition: opacity 0.8s;
 }/*# sourceMappingURL=style.css.map */
